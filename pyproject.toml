@@ -1,0 +1,21 @@
+[project]
+name = "esper"
+version = "0.1.0"
+description = "Event-Sourced Projected Epistemic Resolver"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "blackgeorge>=1.1.9",
+    "python-dotenv>=1.2.1",
+    "sqlite-vec>=0.1.6",
+]
+
+[dependency-groups]
+dev = [
+    "pytest>=9.0.2",
+]
+
+[tool.pytest.ini_options]
+pythonpath = [
+    ".",
+]
